@@ -1,0 +1,2 @@
+# init_ethereum
+Ethereumのgethコマンドなどをセットアップする方法
