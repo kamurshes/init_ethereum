@@ -1,0 +1,10 @@
+[Unit]
+Description = Geth
+
+[Service]
+ExecStart = /usr/bin/geth --datadir /home/kamurshes/my_eth_chain/
+Restart = always
+Type = simple
+
+[Install]
+WantedBy = multi-user.target
