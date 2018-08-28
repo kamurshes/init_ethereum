@@ -33,7 +33,7 @@ Version: 0.4.24+commit.e67f0147.Linux.g++
 ## コントラクトコードをコンパイルする
 
 1. 「ファイル名.sol」を作成
-2. `solc --abi --bin ファイル名.sol`
+2. solc --abi --bin ファイル名.sol
 
 `$ vi SingleNumRegister.sol`
 
