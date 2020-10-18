@@ -1,10 +1,12 @@
 [Unit]
-Description = Geth
-
+Description=Ethereum go client
 [Service]
-ExecStart = /usr/bin/geth --datadir /home/kamurshes/my_eth_chain/
-Restart = always
-Type = simple
-
+User=ubuntu
+Type=simple
+WorkingDirectory=/home/ubuntu/init_ethereum/service
+ExecStart=/bin/bash /home/ubuntu/init_ethereum/service/start.sh
+Restart=on-failure
+RestartSec=5
 [Install]
-WantedBy = multi-user.target
+WantedBy=default.target
+
